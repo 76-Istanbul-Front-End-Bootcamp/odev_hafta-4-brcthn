@@ -1,36 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" type="text/css"/>
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        EXCHANGE APP
-    </header>
-    <div class="container">
-        <div class="currency-box" id="currency-box-from">
-            <p>From:</p>
-        </div>
-        <div class="currency-box" id="currency-box-to">
-            <p>To:</p>
-        </div>
+    <div id="currency">
+        <p>From:</p>
+         <select name="currency-dropdown-from" id="currency-dropdown-from">
+             <option value="select" id="currencybox-from" ></option>
+        </select> 
+   
+        <p>To:</p>
+    
+        <select name="currency-dropdown-to"      id="currency-dropdown-to">
+            <option value="select" id="currencybox-to"></option>
+        </select>
+     
         <div class="currency-amount">
-            <label>Amount</label>
-            <input type="text" value="1" name="amount">
+            <label for="amount"></label>
+            <input type="text"name="amount" placeholder="Amount">
         </div>
         <div class="currency-calculate" id="calculate-button">
             <button>Calculate</button>
         </div>
 
         <div class="currecy-result" id="currency-result">
+           
         </div>
     </div>
-
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
