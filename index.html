@@ -8,17 +8,12 @@
 </head>
 <body>
     <div id="currency">
-        <p>From:</p>
-         <select name="currency-dropdown-from" id="currency-dropdown-from">
-             <option value="select" id="currencybox-from" ></option>
-        </select> 
-   
-        <p>To:</p>
-    
-        <select name="currency-dropdown-to"      id="currency-dropdown-to">
-            <option value="select" id="currencybox-to"></option>
-        </select>
-     
+         <p> From:</p>
+        <div id="currency-from">
+        </div>
+        <p> To:</p>
+        <div id="currency-to">
+        </div>
         <div class="currency-amount">
             <label for="amount"></label>
             <input type="text"name="amount" placeholder="Amount">
@@ -28,9 +23,8 @@
         </div>
 
         <div class="currecy-result" id="currency-result">
-           
-        </div>
-    </div>
+        </div> 
+    </div>  
     <script src="script.js"></script>
 </body>
 </html>
